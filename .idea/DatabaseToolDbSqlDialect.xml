@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DatabaseToolDbSqlDialect">
+    <option name="dialect" value="Oracle" />
+    <option name="dialects">
+      <map>
+        <entry key="$APPLICATION_CONFIG_DIR$/consoles/database-tool/ad72b24f-32ba-4bac-bf22-43dc6d769c43/console.sql" value="Oracle" />
+        <entry key="$APPLICATION_CONFIG_DIR$/consoles/database-tool/b21d2656-412d-443d-8a24-b82baabfabbe/console.sql" value="Oracle" />
+        <entry key="$APPLICATION_CONFIG_DIR$/consoles/database-tool/d5ad78fd-f7b1-449b-9e69-d4356e059209/console.sql" value="Oracle" />
+      </map>
+    </option>
+  </component>
+</project>
