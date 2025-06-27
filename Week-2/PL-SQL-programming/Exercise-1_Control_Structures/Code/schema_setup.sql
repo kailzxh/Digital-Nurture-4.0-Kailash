@@ -26,3 +26,5 @@ INSERT INTO Loans (LoanID, CustomerID, InterestRate, DueDate) VALUES (102, 2, 6.
 INSERT INTO Loans (LoanID, CustomerID, InterestRate, DueDate) VALUES (103, 3, 8.0, SYSDATE + 5);
 INSERT INTO Loans (LoanID, CustomerID, InterestRate, DueDate) VALUES (104, 4, 9.2, SYSDATE + 25);
 INSERT INTO Loans (LoanID, CustomerID, InterestRate, DueDate) VALUES (105, 5, 6.5, SYSDATE + 20);
+
+COMMIT;
