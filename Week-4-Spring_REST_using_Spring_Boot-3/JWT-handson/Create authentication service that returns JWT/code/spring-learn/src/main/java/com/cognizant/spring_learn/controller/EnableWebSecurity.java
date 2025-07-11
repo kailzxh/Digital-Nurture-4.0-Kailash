@@ -1,2 +1,0 @@
-package com.cognizant.spring_learn.controller;public @interface EnableWebSecurity {
-}
