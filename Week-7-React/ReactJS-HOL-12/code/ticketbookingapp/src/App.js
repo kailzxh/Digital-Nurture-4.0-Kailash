@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import LoginButton from "./components/LoginButton";
+import LogoutButton from "./components/LogoutButton";
+import GuestPage from "./components/GuestPage";
+import UserPage from "./components/UserPage";
 
 function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  function handleLoginClick() {
+    setIsLoggedIn(true);
+  }
+  function handleLogoutClick() {
+    setIsLoggedIn(false);
+  }
+
+  
+  let button;
+  if (isLoggedIn) {
+    button = <LogoutButton onClick={handleLogoutClick} />;
+  } else {
+    button = <LoginButton onClick={handleLoginClick} />;
+  }
+
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div style={{marginTop: 30, textAlign: "center"}}>{button}</div>
+      {isLoggedIn ? <UserPage /> : <GuestPage />}
     </div>
   );
 }
