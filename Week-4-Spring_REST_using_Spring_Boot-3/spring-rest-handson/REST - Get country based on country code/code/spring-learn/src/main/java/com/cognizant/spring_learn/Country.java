@@ -4,7 +4,8 @@ public class Country {
     private String code;
     private String name;
 
-    // Getters and Setters
+    // Getters and setters
+
     public String getCode() {
         return code;
     }
@@ -19,5 +20,11 @@ public class Country {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    // toString for debugging
+    @Override
+    public String toString() {
+        return "Country [code=" + code + ", name=" + name + "]";
     }
 }
